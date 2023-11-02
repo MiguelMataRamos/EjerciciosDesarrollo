@@ -18,7 +18,11 @@ class MainActivity : AppCompatActivity() {
     fun iniciarVista (vista : View){
         when(vista.id){
             R.id.ej1 ->  { intent = Intent(this,Ejercicio1::class.java)
-                            startActivity(intent) }
+                            startActivity(intent)
+            }
+            R.id.ej2 -> { intent = Intent(this, Ejercicio2::class.java)
+                            startActivity(intent)
+            }
 
         }
 
