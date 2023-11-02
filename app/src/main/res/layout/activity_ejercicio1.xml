@@ -21,12 +21,13 @@
             android:textColor="@color/white"
             android:text="TRES Y UNA RAYA     ___"
             android:gravity="center"
-            android:textSize="20dp"/>
+            android:textSize="20sp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tres"
         android:background="@color/dgray"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,6 +48,7 @@
             app:layout_constraintBottom_toTopOf="@+id/b4"
             android:layout_margin="5dp"
             android:background="@color/gray"
+            android:onClick="clik"
             />
         <ImageView
             android:id="@+id/b2"
@@ -57,8 +59,8 @@
             app:layout_constraintEnd_toStartOf="@+id/b3"
             app:layout_constraintHorizontal_weight="1"
             android:layout_margin="5dp"
-            android:src=""
             android:background="@color/gray"
+            android:onClick="clik"
             />
         <ImageView
             android:id="@+id/b3"
@@ -70,6 +72,7 @@
             app:layout_constraintHorizontal_weight="1"
             android:layout_margin="5dp"
             android:background="@color/gray"
+            android:onClick="clik"
             />
        <ImageView
            android:id="@+id/b4"
@@ -81,6 +84,7 @@
            app:layout_constraintHorizontal_weight="1"
            android:layout_margin="5dp"
            android:background="@color/gray"
+           android:onClick="clik"
            />
         <ImageView
             android:id="@+id/b5"
@@ -92,6 +96,7 @@
             app:layout_constraintHorizontal_weight="1"
             android:layout_margin="5dp"
             android:background="@color/gray"
+            android:onClick="clik"
             />
         <ImageView
             android:layout_width="0dp"
@@ -103,6 +108,7 @@
             app:layout_constraintHorizontal_weight="1"
             android:layout_margin="5dp"
             android:background="@color/gray"
+            android:onClick="clik"
             />
         <ImageView
             android:id="@+id/b7"
@@ -113,6 +119,7 @@
             app:layout_constraintEnd_toStartOf="@+id/b8"
             android:layout_margin="5dp"
             android:background="@color/gray"
+            android:onClick="clik"
             />
         <ImageView
             android:id="@+id/b8"
@@ -123,6 +130,7 @@
             app:layout_constraintEnd_toStartOf="@+id/b9"
             android:layout_margin="5dp"
             android:background="@color/gray"
+            android:onClick="clik"
             />
         <ImageView
             android:id="@+id/b9"
@@ -133,11 +141,39 @@
             app:layout_constraintStart_toEndOf="@+id/b8"
             android:layout_margin="5dp"
             android:background="@color/gray"
+            android:onClick="clik"
             />
 
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REINICIAR"
+        app:layout_constraintTop_toBottomOf="@+id/tres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/msj_final"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/msj_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LA PARTIDA HA TERMINADO"
+        app:layout_constraintTop_toBottomOf="@+id/tres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="27sp"
+        android:visibility="invisible"/>
+
+
 
 
 
