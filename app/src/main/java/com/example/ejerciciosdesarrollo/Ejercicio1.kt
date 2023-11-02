@@ -3,7 +3,9 @@ package com.example.ejerciciosdesarrollo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import kotlin.random.Random
 
 class Ejercicio1 : AppCompatActivity() {
@@ -23,6 +25,12 @@ class Ejercicio1 : AppCompatActivity() {
                 return  false
             }
         }
+
+        var r = findViewById<Button>(R.id.reset)
+        var msj = findViewById<TextView>(R.id.msj_final)
+        r.visibility = Button.VISIBLE
+        msj.visibility = TextView.VISIBLE
+
         return true
     }
 
@@ -140,7 +148,9 @@ class Ejercicio1 : AppCompatActivity() {
 
             }
 
-            while (maquina && !jugador){
+            terminado = comprobarFin()
+
+            while (maquina && !jugador && !terminado){
                 var aleatorio = Random.nextInt(9)
                 when (aleatorio){
                     0 -> { if (tablero2[0]==0){
