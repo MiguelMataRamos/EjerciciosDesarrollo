@@ -150,6 +150,7 @@
 
 
     <Button
+        android:id="@+id/reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="REINICIAR"
@@ -159,6 +160,7 @@
         app:layout_constraintBottom_toTopOf="@+id/msj_final"
         android:textSize="20sp"
         android:visibility="invisible"
+        android:onClick="reset"
         />
     <TextView
         android:id="@+id/msj_final"
