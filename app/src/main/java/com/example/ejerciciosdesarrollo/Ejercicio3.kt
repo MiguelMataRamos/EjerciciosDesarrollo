@@ -13,7 +13,7 @@ class Ejercicio3 : AppCompatActivity() {
     var lista : MutableList<String> = mutableListOf()
 
     fun pasar(view: View) {
-        var palabra = find
+
     }
 
     fun insertar(view: View) {

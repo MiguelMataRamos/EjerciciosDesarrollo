@@ -286,7 +286,7 @@ class Ejercicio1 : AppCompatActivity() {
 
     }
 
-    fun reset(){
+    fun reset(view: View){
         recreate()
     }
 
