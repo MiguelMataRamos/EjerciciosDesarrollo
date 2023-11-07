@@ -4,6 +4,12 @@ plugins {
 }
 
 android {
+
+    //Binding
+    buildFeatures{
+        viewBinding
+    }
+
     namespace 'com.example.ejerciciosdesarrollo'
     compileSdk 33
 

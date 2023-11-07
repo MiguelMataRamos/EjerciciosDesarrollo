@@ -7,4 +7,39 @@
     android:layout_height="match_parent"
     tools:context=".Ejercicio2">
 
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Introduce un numero"
+        android:layout_margin="10dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/palabra"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Introduce una palabra"
+        android:layout_margin="10dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/num"
+        app:layout_constraintStart_toStartOf="parent"
+
+      />
+
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR"
+        app:layout_constraintTop_toBottomOf="@+id/palabra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="iniciarVista"
+        android:layout_margin="10dp"
+        />
+
   </androidx.constraintlayout.widget.ConstraintLayout>
