@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio3">
+
+    <EditText
+        android:id="@+id/palabra"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="INTRODUCE PALABRAS"
+        android:layout_margin="10dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/insertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSERTAR DATO"
+        app:layout_constraintTop_toBottomOf="@+id/palabra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pasar"
+        android:onClick="insertar"
+        />
+    <Button
+        app:layout_constraintStart_toEndOf="@+id/insertar"
+        app:layout_constraintTop_toTopOf="@+id/insertar"
+        android:id="@+id/pasar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="PASAR DATOS"
+        android:onClick="pasar"/>
+
+
+    <TextView
+        android:id="@+id/texto_muestra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/insertar"
+        android:text="No hay ninguna palabra"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
