@@ -11,7 +11,9 @@ import kotlin.random.Random
 class Ejercicio1 : AppCompatActivity() {
 
     private var tablero2 = mutableListOf(0,0,0,0,0,0,0,0,0)
-    private var terminado = false
+    private var tablerofull = false
+    private var ganador = false
+    private var ganadorfinal = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ejercicio1)
@@ -19,7 +21,7 @@ class Ejercicio1 : AppCompatActivity() {
 
     }
 
-    fun comprobarFin():Boolean{
+    private fun tableroLleno():Boolean{
         for (i in tablero2){
             if (i == 0){
                 return  false
@@ -33,9 +35,46 @@ class Ejercicio1 : AppCompatActivity() {
 
         return true
     }
+    private fun comprobarGanador(jugador:Int):Boolean{
+        if (tablero2[0]==jugador && tablero2[1]==jugador && tablero2[2]==jugador){
+            ganadorfinal = jugador
+        }else if (tablero2[3]==jugador && tablero2[4]==jugador && tablero2[5]==jugador){
+            ganadorfinal = jugador
+        }else if (tablero2[6]==jugador && tablero2[7]==jugador && tablero2[8]==jugador){
+            ganadorfinal = jugador
+        }else if (tablero2[0]==jugador && tablero2[3]==jugador && tablero2[6]==jugador){
+            ganadorfinal = jugador
+        }else if (tablero2[0]==jugador && tablero2[4]==jugador && tablero2[8]==jugador){
+            ganadorfinal = jugador
+        }else if (tablero2[1]==jugador && tablero2[4]==jugador && tablero2[7]==jugador){
+            ganadorfinal = jugador
+        }else if (tablero2[2]==jugador && tablero2[5]==jugador && tablero2[8]==jugador){
+            ganadorfinal = jugador
+        }else if(tablero2[2]==jugador && tablero2[4]==jugador && tablero2[6]==jugador){
+            ganadorfinal = jugador
+        }
+        
+        if (ganadorfinal==1){
+            var r = findViewById<Button>(R.id.reset)
+            var msj = findViewById<TextView>(R.id.msj_final)
+            r.visibility = Button.VISIBLE
+            msj.text = "FELICIDADES LE HAS GANADO A UNA IA"
+            msj.visibility = TextView.VISIBLE
+            return true
+        }else if (ganadorfinal==-1){
+            var r = findViewById<Button>(R.id.reset)
+            var msj = findViewById<TextView>(R.id.msj_final)
+            r.visibility = Button.VISIBLE
+            msj.text = "MIRA SI ERES MALO QUE TA GANAO ESTO"
+            msj.visibility = TextView.VISIBLE
+            return true
+        }
+        
+        return false
+    }
 
     fun clik (view:View){
-        if (!terminado){
+        if (!tablerofull && !ganador){
             var jugador = true
             var maquina = true
 
@@ -148,9 +187,11 @@ class Ejercicio1 : AppCompatActivity() {
 
             }
 
-            terminado = comprobarFin()
 
-            while (maquina && !jugador && !terminado){
+            tablerofull = tableroLleno()
+            ganador = comprobarGanador(1)
+
+            while (maquina && !jugador && !tablerofull && !ganador){
                 var aleatorio = Random.nextInt(9)
                 when (aleatorio){
                     0 -> { if (tablero2[0]==0){
@@ -236,6 +277,8 @@ class Ejercicio1 : AppCompatActivity() {
                 }
 
             }
+
+            ganador = comprobarGanador(-1)
 
         }
 
