@@ -25,10 +25,17 @@ class MainActivity : AppCompatActivity() {
             R.id.ej3 -> {intent = Intent(this, Ejercicio3::class.java)
                             startActivity(intent)
             }
+            R.id.maqueta1 -> {intent = Intent(this, Maqueta1::class.java)
+                startActivity(intent)
+            }
+
+
 
             R.id.maqueta3 -> {intent = Intent(this, Maqueta3::class.java)
                 startActivity(intent)
             }
+
+
 
         }
 

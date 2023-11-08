@@ -41,11 +41,11 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/vista_a_gusto"
+                android:id="@+id/maqueta1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
-                android:text="1. Vista al gusto"
+                android:text="1. Maqueta"
                 android:onClick="iniciarVista"
                 />
 
