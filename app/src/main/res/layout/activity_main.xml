@@ -94,7 +94,14 @@
                 android:id="@+id/ej3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ejercicio 3 (Pasar datos)"
+                android:text="Ejercicio 3 (Pasar lista)"
+                android:onClick="iniciarVista"
+                />
+            <Button
+                android:id="@+id/ej4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ejercicio 4 (Pasar objetos)"
                 android:onClick="iniciarVista"
                 />
 
