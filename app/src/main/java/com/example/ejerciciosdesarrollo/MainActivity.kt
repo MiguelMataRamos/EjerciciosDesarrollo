@@ -29,9 +29,13 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
 
-
-
             R.id.maqueta3 -> {intent = Intent(this, Maqueta3::class.java)
+                startActivity(intent)
+            }
+            R.id.maqueta4 -> {intent = Intent(this, Maqueta4::class.java)
+                startActivity(intent)
+            }
+            R.id.maqueta5 -> {intent = Intent(this, Maqueta5::class.java)
                 startActivity(intent)
             }
 
