@@ -6,4 +6,6 @@
     <color name="dgray">#009688</color>
     <color name="fondo">#01E6D1</color>
     <color name="msg">#017CDA</color>
+    <color name="red">#F44336</color>
+    <color name="yellow">#FFEB3B</color>
 </resources>
