@@ -1,8 +1,11 @@
 package com.example.ejerciciosdesarrollo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
+import android.widget.TextView
 
 class Ejercicio3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,10 +16,20 @@ class Ejercicio3 : AppCompatActivity() {
     var lista : MutableList<String> = mutableListOf()
 
     fun pasar(view: View) {
+        var intent = Intent(this, Ej3Recibir::class.java)
 
+        intent.putExtra("lista", ArrayList(lista))
+
+        startActivity(intent)
     }
 
     fun insertar(view: View) {
+        var palabra = findViewById<EditText>(R.id.palabra)
 
+        lista.add(palabra.text.toString())
+
+        var texto = findViewById<TextView>(R.id.texto_muestra)
+
+        texto.text = lista.toString()
     }
 }

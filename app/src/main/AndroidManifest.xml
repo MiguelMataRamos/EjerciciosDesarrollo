@@ -13,6 +13,12 @@
         android:theme="@style/Theme.EjerciciosDesarrollo"
         tools:targetApi="31">
         <activity
+            android:name=".Ej3Recibir"
+            android:exported="false" />
+        <activity
+            android:name=".Maqueta3"
+            android:exported="false" />
+        <activity
             android:name=".Ejercicio3"
             android:exported="false" />
         <activity

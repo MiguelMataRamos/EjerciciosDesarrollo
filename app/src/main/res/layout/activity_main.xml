@@ -33,40 +33,74 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/vista_a_gusto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="1. Vista al gusto"
+                android:onClick="iniciarVista"
+                />
+
+            <Button
+                android:id="@+id/maqueta3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="3. Maqueta"
+                android:onClick="iniciarVista"
+                />
+
+            <Button
+                android:id="@+id/maqueta4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="4. Maqueta"
+                android:onClick="iniciarVista"
+                />
+
+            <Button
+                android:id="@+id/maqueta5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="5. Maqueta"
+                android:onClick="iniciarVista"
+                />
 
             <Button
                 android:id="@+id/ej1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ejercicio 1"
-                app:layout_constraintTop_toTopOf="parent"
+                android:text="Ejercicio 1 (Tres en raya)"
                 android:onClick="iniciarVista"
                 />
             <Button
                 android:id="@+id/ej2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ejercicio 2"
-                app:layout_constraintTop_toBottomOf="@+id/ej1"
+                android:text="Ejercicio 2 (Pasar datos)"
                 android:onClick="iniciarVista"
                 />
             <Button
                 android:id="@+id/ej3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ejercicio 3"
-                app:layout_constraintTop_toBottomOf="@+id/ej2"
+                android:text="Ejercicio 3 (Pasar datos)"
                 android:onClick="iniciarVista"
                 />
 
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
     </ScrollView>
 

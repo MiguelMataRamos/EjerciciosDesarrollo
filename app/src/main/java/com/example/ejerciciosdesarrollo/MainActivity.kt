@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
                             startActivity(intent)
             }
 
+            R.id.maqueta3 -> {intent = Intent(this, Maqueta3::class.java)
+                startActivity(intent)
+            }
+
         }
 
     }
