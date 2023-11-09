@@ -103,6 +103,7 @@
                 />
 
             <LinearLayout
+                android:background="@color/white2"
                 android:id="@+id/o1"
                 android:layout_width="0dp"
                 android:layout_height="200dp"
@@ -148,6 +149,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:background="@color/white2"
                 android:id="@+id/o2"
                 android:layout_width="0dp"
                 android:layout_height="200dp"
@@ -193,6 +195,7 @@
 
 
             <LinearLayout
+                android:background="@color/white2"
                 android:id="@+id/o3"
                 android:layout_width="0dp"
                 android:layout_height="200dp"
@@ -237,6 +240,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:background="@color/white2"
                 android:id="@+id/o4"
                 android:layout_width="0dp"
                 android:layout_height="200dp"
@@ -281,6 +285,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:background="@color/white2"
                 android:id="@+id/o5"
                 android:layout_width="0dp"
                 android:layout_height="200dp"
@@ -325,6 +330,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:background="@color/white2"
                 android:id="@+id/o6"
                 android:layout_width="0dp"
                 android:layout_height="200dp"
@@ -370,6 +376,7 @@
 
 
             <LinearLayout
+                android:background="@color/white2"
                 android:id="@+id/o7"
                 android:layout_width="0dp"
                 android:layout_height="200dp"
@@ -414,6 +421,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:background="@color/white2"
                 android:id="@+id/o8"
                 android:layout_width="0dp"
                 android:layout_height="200dp"
