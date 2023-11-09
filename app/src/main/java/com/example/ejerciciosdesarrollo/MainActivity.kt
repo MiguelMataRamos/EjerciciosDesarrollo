@@ -16,15 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     fun iniciarVista (vista : View){
         when(vista.id){
-            R.id.ej1 ->  { intent = Intent(this,Ejercicio1::class.java)
-                            startActivity(intent)
-            }
-            R.id.ej2 -> { intent = Intent(this, Ejercicio2::class.java)
-                            startActivity(intent)
-            }
-            R.id.ej3 -> {intent = Intent(this, Ejercicio3::class.java)
-                            startActivity(intent)
-            }
+
             R.id.maqueta1 -> {intent = Intent(this, Maqueta1::class.java)
                 startActivity(intent)
             }
@@ -39,6 +31,18 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
 
+            R.id.ej1 ->  { intent = Intent(this,Ejercicio1::class.java)
+                startActivity(intent)
+            }
+            R.id.ej2 -> { intent = Intent(this, Ejercicio2::class.java)
+                startActivity(intent)
+            }
+            R.id.ej3 -> {intent = Intent(this, Ejercicio3::class.java)
+                startActivity(intent)
+            }
+            R.id.ej4 -> {intent = Intent(this, Ejercicio4::class.java)
+                startActivity(intent)
+            }
 
 
         }

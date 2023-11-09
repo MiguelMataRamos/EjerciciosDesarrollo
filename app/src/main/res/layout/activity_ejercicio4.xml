@@ -10,7 +10,10 @@
         android:id="@+id/b_españa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ESPAÑITA"/>
+        android:text="ESPAÑITA"
+        android:onClick="pasarPais"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/b_francia"

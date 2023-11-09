@@ -13,7 +13,7 @@ class Ejercicio3 : AppCompatActivity() {
         setContentView(R.layout.activity_ejercicio3)
     }
 
-    var lista : MutableList<String> = mutableListOf()
+    private var lista : MutableList<String> = mutableListOf()
 
     fun pasar(view: View) {
         var intent = Intent(this, Ej3Recibir::class.java)
