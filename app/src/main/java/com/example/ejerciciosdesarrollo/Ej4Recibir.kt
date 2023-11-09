@@ -29,6 +29,5 @@ class Ej4Recibir : AppCompatActivity() {
             foto.setImageResource(R.drawable.bandera_francia)
         }
 
-
     }
 }
