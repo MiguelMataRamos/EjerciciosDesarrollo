@@ -121,7 +121,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="20sp"
-                        android:text="aaaa aaa\naajalka akjsyh"
+                        android:text="k dise el grupo"
                         android:textColor="@color/white"
                         android:textSize="15dp"
 
@@ -188,7 +188,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="20sp"
-                        android:text="aaaa aaa\naajalka akjsyh"
+                        android:text="weeee \n\ncomo ta la gente"
                         android:textColor="@color/white"
                         android:textSize="15dp"
                         tools:ignore="TextSizeCheck" />
@@ -254,7 +254,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="20sp"
-                        android:text="aaaa aaa\naajalka akjsyh"
+                        android:text="control en la salida de ogijares"
                         android:textColor="@color/white"
                         android:textSize="15dp"
                         tools:ignore="TextSizeCheck" />
@@ -320,7 +320,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="20sp"
-                        android:text="aaaa aaa\naajalka akjsyh"
+                        android:text="hoy se sale o que??"
                         android:textColor="@color/white"
                         android:textSize="15dp"
                         tools:ignore="TextSizeCheck" />
@@ -343,50 +343,28 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/user"
-                    app:layout_constraintHorizontal_weight="1"
-                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/nomb_user5"/>
-
-                <TextView
-                    android:id="@+id/nomb_user5"
-                    android:textSize="20sp"
-                    android:paddingLeft="10dp"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="NOMBRE"
-                    app:layout_constraintStart_toEndOf="@+id/user5"
-                    app:layout_constraintEnd_toStartOf="@+id/estado5"
-                    app:layout_constraintBottom_toBottomOf="@+id/user5"
-                    app:layout_constraintHorizontal_weight="8"/>
-
-                <ImageView
-                    android:id="@+id/estado5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintHorizontal_weight="2"
-                    android:src="@drawable/chek"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/user5"
-                    app:layout_constraintStart_toEndOf="@+id/nomb_user5"
-                    />
+                    android:layout_marginEnd="25dp"/>
+
+
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/nomb_user5"
-                    app:layout_constraintStart_toStartOf="@id/nomb_user5"
-                    app:layout_constraintEnd_toStartOf="@id/estado5"
+                    app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginTop="10dp"
                     app:cardBackgroundColor="@color/msg"
                     app:cardCornerRadius="15dp"
-                    app:cardElevation="30dp">
+                    app:cardElevation="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/user5"
+                    >
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="20sp"
-                        android:text="aaaa aaa\naajalka akjsyh"
+                        android:text="wenos diasss"
                         android:textColor="@color/white"
                         android:textSize="15dp"
                         tools:ignore="TextSizeCheck" />
@@ -452,7 +430,36 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="20sp"
-                        android:text="aaaa aaa\naajalka akjsyh"
+                        android:text="chavalas me escrito esto:\n
+Escribo estas líneas con un nudo en la garganta y un corazón
+                                        lleno de pesar. Lo que tengo que decir es difícil y sé que
+                                        va a herir, pero creo que mereces la verdad y la sinceridad
+                                        en este momento.
+
+                                        He llegado a una encrucijada en mi vida donde siento la
+                                        necesidad de tomar un camino diferente. Esta decisión no
+                                        implica que los momentos que compartimos no hayan sido
+                                        significativos o que no te valore como persona. Simplemente,
+                                        creo que necesito espacio para crecer y entender mejor quién
+                                         soy fuera de esta relación.
+
+                                        Entiendo que esto puede ser impactante y doloroso, y lo
+                                        siento sinceramente. No es mi intención herirte, pero creo
+                                        que es justo para ambos ser honestos sobre nuestros
+                                        sentimientos.
+
+                                        Aprecio profundamente todo lo que hemos compartido y el
+                                        tiempo que pasamos juntos. Eres una persona increíble y
+                                        mereces alguien que esté completamente comprometido y seguro
+                                         en la relación. Creo que es lo mejor para ambos seguir
+                                         caminos separados en este momento.
+
+                                        Te deseo lo mejor en tu viaje y espero que encuentres la
+                                        felicidad y el amor que mereces. Aprecio todo lo que fuiste
+                                        para mí y siempre llevaré los buenos recuerdos en mi corazón.
+
+                                        Con pesar y respeto,"
+
                         android:textColor="@color/white"
                         android:textSize="15dp"
                         tools:ignore="TextSizeCheck" />
