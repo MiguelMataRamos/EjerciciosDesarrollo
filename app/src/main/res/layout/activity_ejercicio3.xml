@@ -6,6 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".Ejercicio3">
 
+    <LinearLayout
+        android:id="@+id/cabecera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Enviar Lista"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
     <EditText
         android:id="@+id/palabra"
         android:layout_width="match_parent"
@@ -13,9 +31,10 @@
         android:hint="INTRODUCE PALABRAS"
         android:layout_margin="10dp"
         android:background="@color/gray"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cabecera"
         app:layout_constraintStart_toStartOf="parent"
-        android:gravity="center"/>
+        android:gravity="center"
+        />
 
     <Button
         android:id="@+id/insertar"
@@ -26,6 +45,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/pasar"
         android:onClick="insertar"
+        android:layout_marginTop="10dp"
         />
     <Button
         app:layout_constraintStart_toEndOf="@+id/insertar"
@@ -44,7 +64,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/insertar"
         android:text="No hay ninguna palabra"
-
+        android:gravity="center"
+        android:layout_marginTop="20dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

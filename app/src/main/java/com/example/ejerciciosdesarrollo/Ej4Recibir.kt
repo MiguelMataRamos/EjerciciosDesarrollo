@@ -22,10 +22,12 @@ class Ej4Recibir : AppCompatActivity() {
 
 
         nombre.text = pais.nombre
-        habitantes.text = "Numero de franchutes: " + pais.habitantes.toString()
+
         if (pais.bandera=="bandera_espana"){
+            habitantes.text = "¡Numero de ESPAÑOLES!: " + pais.habitantes.toString()
             foto.setImageResource(R.drawable.bandera_espana)
         }else{
+            habitantes.text = "Numero de Franchutes: " + pais.habitantes.toString()
             foto.setImageResource(R.drawable.bandera_francia)
         }
 
