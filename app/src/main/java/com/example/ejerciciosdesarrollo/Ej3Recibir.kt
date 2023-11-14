@@ -10,11 +10,11 @@ class Ej3Recibir : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ej3_recibir)
 
-        var lista = intent.getStringArrayListExtra("lista")
+        val lista = intent.getStringArrayListExtra("lista")
 
         Log.v("lista", lista.toString())
 
-        var texto = findViewById<TextView>(R.id.ej3_texto)
+        val texto = findViewById<TextView>(R.id.ej3_texto)
 
         texto.text = lista.toString()
 

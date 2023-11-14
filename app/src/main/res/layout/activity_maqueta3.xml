@@ -24,7 +24,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:text="MENSAJES"
             android:gravity="center"
-            android:textSize="20dp"
+            android:textSize="20sp"
             />
 
         <ImageView
@@ -85,14 +85,15 @@
                 <TextView
                     android:id="@+id/nomb_user"
                     android:textSize="20sp"
-                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="NOMBRE"
                     app:layout_constraintStart_toEndOf="@+id/user"
                     app:layout_constraintEnd_toStartOf="@+id/estado"
                     app:layout_constraintBottom_toBottomOf="@+id/user"
-                    app:layout_constraintHorizontal_weight="8"/>
+                    app:layout_constraintHorizontal_weight="8"
+                    tools:ignore="RtlSymmetry" />
 
                 <ImageView
                     android:id="@+id/estado"
@@ -123,7 +124,7 @@
                         android:padding="20sp"
                         android:text="k dise el grupo"
                         android:textColor="@color/white"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
 
                         tools:ignore="TextSizeCheck" />
 
@@ -153,14 +154,15 @@
                 <TextView
                     android:id="@+id/nomb_user2"
                     android:textSize="20sp"
-                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="NOMBRE"
                     app:layout_constraintStart_toEndOf="@+id/user2"
                     app:layout_constraintEnd_toStartOf="@+id/estado2"
                     app:layout_constraintBottom_toBottomOf="@+id/user2"
-                    app:layout_constraintHorizontal_weight="8"/>
+                    app:layout_constraintHorizontal_weight="8"
+                    tools:ignore="RtlSymmetry" />
 
                 <ImageView
                     android:id="@+id/estado2"
@@ -190,7 +192,7 @@
                         android:padding="20sp"
                         android:text="weeee \n\ncomo ta la gente"
                         android:textColor="@color/white"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         tools:ignore="TextSizeCheck" />
 
                 </androidx.cardview.widget.CardView>
@@ -219,14 +221,15 @@
                 <TextView
                     android:id="@+id/nomb_user3"
                     android:textSize="20sp"
-                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="NOMBRE"
                     app:layout_constraintStart_toEndOf="@+id/user3"
                     app:layout_constraintEnd_toStartOf="@+id/estado3"
                     app:layout_constraintBottom_toBottomOf="@+id/user3"
-                    app:layout_constraintHorizontal_weight="8"/>
+                    app:layout_constraintHorizontal_weight="8"
+                    tools:ignore="RtlSymmetry" />
 
                 <ImageView
                     android:id="@+id/estado3"
@@ -256,7 +259,7 @@
                         android:padding="20sp"
                         android:text="control en la salida de ogijares"
                         android:textColor="@color/white"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         tools:ignore="TextSizeCheck" />
 
                 </androidx.cardview.widget.CardView>
@@ -285,14 +288,15 @@
                 <TextView
                     android:id="@+id/nomb_user4"
                     android:textSize="20sp"
-                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="NOMBRE"
                     app:layout_constraintStart_toEndOf="@+id/user4"
                     app:layout_constraintEnd_toStartOf="@+id/estado4"
                     app:layout_constraintBottom_toBottomOf="@+id/user4"
-                    app:layout_constraintHorizontal_weight="8"/>
+                    app:layout_constraintHorizontal_weight="8"
+                    tools:ignore="RtlSymmetry" />
 
                 <ImageView
                     android:id="@+id/estado4"
@@ -322,7 +326,7 @@
                         android:padding="20sp"
                         android:text="hoy se sale o que??"
                         android:textColor="@color/white"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         tools:ignore="TextSizeCheck" />
 
                 </androidx.cardview.widget.CardView>
@@ -395,14 +399,15 @@
                 <TextView
                     android:id="@+id/nomb_user6"
                     android:textSize="20sp"
-                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="NOMBRE"
                     app:layout_constraintStart_toEndOf="@+id/user6"
                     app:layout_constraintEnd_toStartOf="@+id/estado6"
                     app:layout_constraintBottom_toBottomOf="@+id/user6"
-                    app:layout_constraintHorizontal_weight="8"/>
+                    app:layout_constraintHorizontal_weight="8"
+                    tools:ignore="RtlSymmetry" />
 
                 <ImageView
                     android:id="@+id/estado6"
@@ -461,7 +466,7 @@ Escribo estas líneas con un nudo en la garganta y un corazón
                                         Con pesar y respeto,"
 
                         android:textColor="@color/white"
-                        android:textSize="15dp"
+                        android:textSize="15sp"
                         tools:ignore="TextSizeCheck" />
 
                 </androidx.cardview.widget.CardView>

@@ -27,7 +27,7 @@
             android:text="CABECERA"
             android:layout_gravity="center"
             android:layout_weight="8"
-            android:textSize="25dp"/>
+            android:textSize="25sp"/>
 
 
         <ImageView
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:text="Boton por la cara"
             android:layout_gravity="center"
-            android:textSize="20dp"/>
+            android:textSize="20sp"/>
 
 
     </androidx.cardview.widget.CardView>
@@ -107,7 +107,7 @@
             android:layout_height="wrap_content"
             android:text="Y aqui otro mas"
             android:layout_gravity="center"
-            android:textSize="20dp"/>
+            android:textSize="20sp"/>
 
     </androidx.cardview.widget.CardView>
 

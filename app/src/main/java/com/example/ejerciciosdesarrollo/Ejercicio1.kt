@@ -28,8 +28,8 @@ class Ejercicio1 : AppCompatActivity() {
             }
         }
 
-        var r = findViewById<Button>(R.id.reset)
-        var msj = findViewById<TextView>(R.id.msj_final)
+        val r = findViewById<Button>(R.id.reset)
+        val msj = findViewById<TextView>(R.id.msj_final)
         r.visibility = Button.VISIBLE
         msj.visibility = TextView.VISIBLE
 
@@ -55,17 +55,19 @@ class Ejercicio1 : AppCompatActivity() {
         }
         
         if (ganadorfinal==1){
-            var r = findViewById<Button>(R.id.reset)
-            var msj = findViewById<TextView>(R.id.msj_final)
+            val r = findViewById<Button>(R.id.reset)
+            val msj = findViewById<TextView>(R.id.msj_final)
             r.visibility = Button.VISIBLE
-            msj.text = "FELICIDADES LE HAS GANADO A UNA IA"
+            val texto = "FELICIDADES LE HAS GANADO A UNA IA"
+            msj.text = texto
             msj.visibility = TextView.VISIBLE
             return true
         }else if (ganadorfinal==-1){
-            var r = findViewById<Button>(R.id.reset)
-            var msj = findViewById<TextView>(R.id.msj_final)
+            val r = findViewById<Button>(R.id.reset)
+            val msj = findViewById<TextView>(R.id.msj_final)
             r.visibility = Button.VISIBLE
-            msj.text = "MIRA SI ERES MALO QUE TA GANAO ESTO"
+            val texto = "MIRA SI ERES MALO QUE TA GANAO ESTO"
+            msj.text = texto
             msj.visibility = TextView.VISIBLE
             return true
         }
@@ -192,8 +194,7 @@ class Ejercicio1 : AppCompatActivity() {
             ganador = comprobarGanador(1)
 
             while (maquina && !jugador && !tablerofull && !ganador){
-                var aleatorio = Random.nextInt(9)
-                when (aleatorio){
+                when (Random.nextInt(9)){
                     0 -> { if (tablero2[0]==0){
                             val b1 = findViewById<ImageView>(R.id.b1)
                             b1.setImageResource(R.drawable.o)

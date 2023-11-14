@@ -16,7 +16,7 @@ class Ejercicio3 : AppCompatActivity() {
     private var lista : MutableList<String> = mutableListOf()
 
     fun pasar(view: View) {
-        var intent = Intent(this, Ej3Recibir::class.java)
+        val intent = Intent(this, Ej3Recibir::class.java)
 
         intent.putExtra("lista", ArrayList(lista))
 
@@ -24,11 +24,11 @@ class Ejercicio3 : AppCompatActivity() {
     }
 
     fun insertar(view: View) {
-        var palabra = findViewById<EditText>(R.id.palabra)
+        val palabra = findViewById<EditText>(R.id.palabra)
 
         lista.add(palabra.text.toString())
 
-        var texto = findViewById<TextView>(R.id.texto_muestra)
+        val texto = findViewById<TextView>(R.id.texto_muestra)
 
         texto.text = lista.toString()
     }

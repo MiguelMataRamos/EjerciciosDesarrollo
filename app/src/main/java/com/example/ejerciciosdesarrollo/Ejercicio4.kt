@@ -19,18 +19,18 @@ class Ejercicio4 : AppCompatActivity() {
     data class Pais(val nombre:String, val habitantes:Int, val bandera:String) : Parcelable
 
     fun pasarPais(view: View) {
-        var intent = Intent(this,Ej4Recibir::class.java)
+        val intent = Intent(this,Ej4Recibir::class.java)
 
         when (view.id){
             R.id.b_españa -> {
-                var pais = Pais("España", 400000, "bandera_espana")
+                val pais = Pais("España", 400000, "bandera_espana")
                 intent.putExtra("pais",pais)
                 startActivity(intent)
 
 
             }
             R.id.b_francia -> {
-                var pais = Pais("Francia", 200000, "bandera_francia")
+                val pais = Pais("Francia", 200000, "bandera_francia")
                 intent.putExtra("pais",pais)
                 startActivity(intent)
             }
